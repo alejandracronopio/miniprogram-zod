@@ -1,0 +1,43 @@
+{
+  "name": "miniprogram-ts-less-quickstart",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "husky": "^3.0.4",
+    "lint-staged": "^9.2.4",
+    "prettier": "^2.6.2",
+    "zod": "^2.0.0-beta.30"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
+    "miniprogram-api-typings": "^2.8.3-1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "{src,__{tests,mocks}__}/**/*.(j|t)s": [
+      "prettier --write",
+      "git add"
+    ],
+    "src/**/*.scss": [
+      "prettier --write",
+      "git add"
+    ],
+    "src/**/*.wxml": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
