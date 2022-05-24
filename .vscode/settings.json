@@ -1,0 +1,4 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "minapp-vscode.wxmlFormatter": "prettier", //指定格式化工具
+}
