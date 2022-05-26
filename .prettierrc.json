@@ -18,6 +18,10 @@
         "options": {
           "printWidth": 200
         }
+      },
+      {
+        "files": "*.wxml",
+        "options": { "parser": "html" }
       }
     ]
   }
